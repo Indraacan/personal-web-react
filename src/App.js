@@ -1,25 +1,26 @@
-import React, { Component } from 'react'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Home from './Pages/Home'
-import Article from './Pages/Article'
-import Portfolio from './Pages/Portfolio'
-import Hire from './Pages/Hire'
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Nav from './component/Nav'
+import "bootstrap/dist/css/bootstrap.min.css";
 
- class App extends Component {
+import Home from "./Pages/Home";
+import Portfolio from "./Pages/Portfolio";
+import Hire from "./Pages/Hire";
+
+import Nav from "./component/Nav";
+
+class App extends Component {
   render() {
     return (
       <Router>
         <Nav />
         <Switch>
-          <Route exact path='/' component={Home}></Route>
-          <Route path='/article' component={Article}></Route>
-          <Route path='/portfolio' component={Portfolio}></Route>
-          <Route path='/hire' component={Hire}></Route>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/hire" component={Hire} />
         </Switch>
       </Router>
-    )
+    );
   }
 }
-export default App
+export default App;

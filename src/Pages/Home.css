@@ -1,4 +1,4 @@
-.img-s{
+/* .img-s{
     background-image: url('./asset/foto.jpg');
     background-size: cover;
     width: 100%;
@@ -43,4 +43,24 @@
     margin-top: -450px;
     margin-left: 200px;
     margin-right: 50px;
+} */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&family=Montserrat:wght@300&display=swap");
+
+.bg {
+  background-image: url(./asset/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.display-5 {
+  font-family: "EB Garamond ", serif;
+}
+
+.lead {
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+
+.spasi {
+  width: 6rem;
 }
